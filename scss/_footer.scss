@@ -1,0 +1,19 @@
+.footer{
+    // left: 0;
+    // bottom: 0;
+    background: url("../assets/IMAGE\ \(20\).svg") no-repeat center/cover;
+    &__wrapper{
+        height: 89px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__collection{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: #fff;
+        font-size: 12px;
+    }
+}

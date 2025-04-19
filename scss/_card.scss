@@ -1,0 +1,82 @@
+.Posts{
+    margin-bottom: 60px;
+&__card:first-child{
+        background: url("../assets/IMAGE\ \(22\).svg") no-repeat center/cover;
+}
+&__card:nth-child(2){
+        background: url("../assets/Frame\ \(27\).svg") no-repeat center/cover;
+    }
+&__cards{
+    margin-top: 16px;
+    padding: 7px 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+&__card{
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    height: 280px;
+    color: #fff;
+    flex-direction: column;
+    justify-content: flex-end;
+    h3{
+        font-size: 27px;
+        margin-bottom: 6px;
+        font-weight: 300;
+    }
+    p{
+        font-size: 14px;
+        opacity: 0.7;
+        font-weight: 200;
+    }
+    &__people{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        span{
+            font-size: 12px;
+            opacity: 0.7;
+            font-weight: 200;
+        }
+    }
+    &__author{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+}
+.card__title{
+    text-align: center;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 33px;
+}
+
+
+
+@media (max-width:870px) {
+    .Posts{
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 100px;
+        &__cards{
+            grid-template-columns: 1fr;
+            padding: 0;
+        }
+    }
+} 
+@media (max-width:350px) {
+    .Posts{
+        padding-left: 1px;
+        padding-right: 1px;
+        margin-top: 250px;
+        &__cards{
+            grid-template-columns: 1fr;
+            padding: 0;
+        }
+    }
+} 

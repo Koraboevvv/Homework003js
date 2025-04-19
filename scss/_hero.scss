@@ -1,0 +1,45 @@
+.heroo{
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    background: url("../assets/IMAGE\ \(21\).svg") no-repeat center/cover;
+}
+
+.hero__wrapper{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    &__collection{
+        font-family: Oxygen;
+        h1{
+            margin-top: 190px;   
+            color: #FFFFFF;
+            margin-bottom: 20px;
+            font-size: 50px;
+            line-height: 51px;
+        }
+        p{
+            font-size: 17px;
+            color: #ffffff8e;
+            margin-bottom: 32px;
+        }
+        &__button{
+            padding: 12px 31px;
+            background: #DD783F;
+            color: #FFFFFF;
+            font-size: 13px;
+            font-weight: 400;
+            border: 2px solid #DD783F;
+            cursor: pointer;
+            transition: .2s;
+            border-radius: 3px;
+            &:hover{
+                color: #DD783F;
+                background: #FFFFFF;
+                border: 2px solid  #DD783F;
+                
+            }
+        }
+    }
+}
